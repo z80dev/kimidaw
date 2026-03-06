@@ -1,0 +1,46 @@
+{
+  "name": "@daw/web",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "monaco-editor": "^0.45.0",
+    "zod": "^3.22.4",
+    "@daw/project-schema": "workspace:*",
+    "@daw/engine-core": "workspace:*",
+    "@daw/engine-scheduler": "workspace:*",
+    "@daw/dsp-runtime": "workspace:*",
+    "@daw/dsp-builtins": "workspace:*",
+    "@daw/plugin-api": "workspace:*",
+    "@daw/storage": "workspace:*",
+    "@daw/midi": "workspace:*",
+    "@daw/scripting-api": "workspace:*",
+    "@daw/scripting-runtime": "workspace:*",
+    "@daw/import-export": "workspace:*",
+    "@daw/waveforms": "workspace:*",
+    "@daw/diagnostics": "workspace:*",
+    "@daw/ui-shell": "workspace:*",
+    "@daw/ui-arrange": "workspace:*",
+    "@daw/ui-pianoroll": "workspace:*",
+    "@daw/ui-mixer": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vite-plugin-pwa": "^0.17.4",
+    "vitest": "^1.2.0",
+    "workbox-window": "^7.0.0"
+  }
+}

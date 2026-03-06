@@ -1,0 +1,61 @@
+{
+  "name": "@daw/midi-effects",
+  "version": "0.1.0",
+  "description": "Ableton-style MIDI effects for in-browser DAW",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./arpeggiator": {
+      "import": "./dist/arpeggiator/index.js",
+      "types": "./dist/arpeggiator/index.d.ts"
+    },
+    "./chord": {
+      "import": "./dist/chord/index.js",
+      "types": "./dist/chord/index.d.ts"
+    },
+    "./note-length": {
+      "import": "./dist/note-length/index.js",
+      "types": "./dist/note-length/index.d.ts"
+    },
+    "./pitch": {
+      "import": "./dist/pitch/index.js",
+      "types": "./dist/pitch/index.d.ts"
+    },
+    "./random": {
+      "import": "./dist/random/index.js",
+      "types": "./dist/random/index.d.ts"
+    },
+    "./scale": {
+      "import": "./dist/scale/index.js",
+      "types": "./dist/scale/index.d.ts"
+    },
+    "./velocity": {
+      "import": "./dist/velocity/index.js",
+      "types": "./dist/velocity/index.d.ts"
+    },
+    "./mpe-control": {
+      "import": "./dist/mpe-control/index.js",
+      "types": "./dist/mpe-control/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

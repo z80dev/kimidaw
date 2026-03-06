@@ -1,0 +1,45 @@
+{
+  "name": "@daw/instruments-operator",
+  "version": "1.0.0",
+  "description": "Ableton-style Operator FM synthesizer with 8 operators",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./worklet": {
+      "import": "./dist/worklet/OperatorProcessor.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "daw",
+    "fm-synthesis",
+    "operator",
+    "dx7",
+    "synthesizer",
+    "webaudio"
+  ],
+  "author": "DAW Team",
+  "license": "MIT",
+  "dependencies": {
+    "@daw/plugin-api": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

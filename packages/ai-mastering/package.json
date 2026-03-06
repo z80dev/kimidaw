@@ -1,0 +1,23 @@
+{
+  "name": "@daw/ai-mastering",
+  "version": "1.0.0",
+  "description": "AI-powered automatic mastering engine with genre-aware processing",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@daw/project-schema": "workspace:*",
+    "onnxruntime-web": "^1.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "license": "MIT"
+}

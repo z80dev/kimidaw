@@ -1,0 +1,37 @@
+{
+  "name": "@daw/instruments-impulse",
+  "version": "1.0.0",
+  "description": "Ableton-style Impulse drum sampler",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "daw",
+    "drum",
+    "sampler",
+    "impulse",
+    "webaudio"
+  ],
+  "author": "DAW Team",
+  "license": "MIT",
+  "dependencies": {
+    "@daw/plugin-api": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
