@@ -400,6 +400,13 @@ async function boot(): Promise<void> {
     </StrictMode>
   );
 
+  // Hide the loading splash
+  const splash = document.getElementById("loading-splash");
+  if (splash) {
+    splash.classList.add("hidden");
+    setTimeout(() => splash.remove(), 300);
+  }
+
   console.log("[DAW] Boot sequence complete");
 }
 
